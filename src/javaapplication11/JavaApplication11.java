@@ -5,6 +5,8 @@
  */
 package javaapplication11;
 
+import java.util.Scanner;
+
 /**
  *
  * @author r2kar
@@ -49,7 +51,10 @@ public class JavaApplication11 {
     public static void main(String[] args) {
         // TODO code application logic here
         // try to get the input (myStr) from the user
-        String myStr= "SUMMER";
+        Scanner in=new Scanner(System.in);
+        System.out.println("Enter the season");
+        String myStr= in.nextLine();
+
         JavaApplication11 test1= new JavaApplication11(Seasons.valueOf(myStr));
         test1.seasonDescription();
         //test1.isSeason();
